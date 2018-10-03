@@ -1,56 +1,52 @@
-import pymysql.cursors
+import modules.db as db
 import json
+import time
 
 
 def save_artists_page(artist_list):
     for a in artist_list:
         artist = a["artist"]
-
-
         data = {
-            'ym_artist_id': artist["id"],
             "name": artist["name"],
             "available": artist["available"],
             "links": json.dumps(artist["links"]),
-            "genres": ', '.join(artist["genres"])
+            "genres": ', '.join(artist["genres"]),
+            "date_update_parse": time.time()
         }
 
         if check_artist(artist["id"]):
-            break
-            update_user(artist["id"])
+            update_user(artist["id"], data)
         else:
-            insert_user(artist["id"])
+            data['ym_artist_id'] = artist["id"]
+            insert_user(data)
 
 
-def check_artist(id: int):
-    # Подключиться к базе данных.
-    connection = pymysql.connect(host='localhost',
-                                 user='analytic',
-                                 password='CzeY3YOW9lzk71D3',
-                                 db='yandex_data',
-                                 charset='utf8mb4',
-                                 cursorclass=pymysql.cursors.DictCursor)
-
-    print("connect successful!!")
-
+def check_artist(artist_id: int):
+    connection = db.get_connection()
     with connection.cursor() as cursor:
-        # SQL
-        sql = "SELECT id FROM artists WHERE ym_artist_id='"+id+"'"
-
-        # Выполнить команду запроса (Execute Query).
+        sql = "SELECT id FROM `artists` WHERE ym_artist_id='"+artist_id+"'"
         cursor.execute(sql)
 
-        print("cursor.description: ", cursor.description)
-
-        print()
-
-        for row in cursor:
-            print(row)
+        return len(cursor) == 1
 
 
-def update_user():
-    pass
+def update_user(artist_id, data):
+    connection = db.get_connection()
+    with connection.cursor() as cursor:
+        keys = data.keys()
+        values = data.values()
+        kv_list = ["{0}='{1}'".format(k,v) for k,v in (keys, values)]
+        sql = "UPDATE `artists` SET %s WHERE ym_artist_id=%s"
+        cursor.execute(sql, (", ".join(kv_list), artist_id))
+        connection.commit()
 
 
-def insert_user():
-    pass
+def insert_user(data):
+    connection = db.get_connection()
+    with connection.cursor() as cursor:
+        keys = data.keys()
+        values = data.values()
+        kv_list = ["{0}='{1}'".format(k, v) for k, v in (keys, values)]
+        sql = "INSERT INTO `artists` %s "
+        cursor.execute(sql, (", ".join(kv_list)))
+        connection.commit()
