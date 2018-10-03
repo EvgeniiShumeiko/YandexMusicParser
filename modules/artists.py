@@ -35,7 +35,7 @@ def check_artist(id: int):
 
     with connection.cursor() as cursor:
         # SQL
-        sql = "SELECT id FROM artist WHERE ym_artist_id='"+id+"'"
+        sql = "SELECT id FROM artists WHERE ym_artist_id='"+id+"'"
 
         # Выполнить команду запроса (Execute Query).
         cursor.execute(sql)
