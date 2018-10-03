@@ -40,12 +40,9 @@ def update_user(artist_id, data):
         connection.commit()
 
 
-def insert_user(data):
+def insert_user(d):
     connection = db.get_connection()
     with connection.cursor() as cursor:
-        keys = data.keys()
-        values = data.values()
-        kv_list = ["{0}='{1}'".format(k, v) for k, v in (keys, values)]
-        sql = "INSERT INTO `artists` SET "+", ".join(kv_list)
-        cursor.execute(sql)
+        sql = "INSERT INTO `artists` (ym_artist_id, name, available,links, genres) VALUES (%s, %s, $s, %s, %s)"
+        cursor.execute(sql, (d["ym_artist_id"], d["name"], d["available"], d["links"], d["genres"]))
         connection.commit()
