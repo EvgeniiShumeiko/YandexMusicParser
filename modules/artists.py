@@ -27,17 +27,18 @@ def check_artist(artist_id: int):
     with connection.cursor() as cursor:
         sql = "SELECT id FROM `artists` WHERE ym_artist_id='"+artist_id+"'"
         cursor.execute(sql)
-
+        print(cursor)
         return cursor
 
 
 def update_user(artist_id, data):
-    connection = db.get_connection()
-    with connection.cursor() as cursor:
-        kv_list = ["{0}='{1}'".format(k, v) for k, v in data.items()]
-        sql = "UPDATE `artists` SET "+", ".join(kv_list)+" WHERE ym_artist_id='"+artist_id+"'"
-        cursor.execute(sql)
-        connection.commit()
+    # connection = db.get_connection()
+    # with connection.cursor() as cursor:
+    #     kv_list = ["{0}='{1}'".format(k, v) for k, v in data.items()]
+    #     sql = "UPDATE `artists` SET "+", ".join(kv_list)+" WHERE ym_artist_id='"+artist_id+"'"
+    #     cursor.execute(sql)
+    #     connection.commit()
+    pass
 
 
 def insert_user(d):

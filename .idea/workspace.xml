@@ -72,13 +72,13 @@
         <counts>
           <entry key="Python Console" value="192" />
           <entry key="dummy" value="12" />
-          <entry key="py" value="3020" />
+          <entry key="py" value="3036" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="12" />
-          <entry key="Python" value="3210" />
+          <entry key="Python" value="3226" />
           <entry key="SQL" value="2" />
         </counts>
       </usages-collector>
@@ -115,13 +115,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/modules/artists.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="46" column="67" selection-start-line="46" selection-start-column="67" selection-end-line="46" selection-end-column="67" />
+            <state relative-caret-position="353">
+              <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
-                <marker date="1538575396626" expanded="true" signature="626:627" ph="..." />
-                <marker date="1538575396626" expanded="true" signature="866:1167" ph="..." />
-                <marker date="1538575396626" expanded="true" signature="1186:1191" ph="..." />
+                <marker date="1538575471893" expanded="true" signature="626:627" ph="..." />
+                <marker date="1538575471893" expanded="true" signature="887:892" ph="..." />
+                <marker date="1538575471893" expanded="true" signature="887:1209" ph="..." />
+                <marker date="1538575471893" expanded="true" signature="1228:1233" ph="..." />
               </folding>
             </state>
           </provider>
@@ -415,13 +416,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/artists.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="46" column="67" selection-start-line="46" selection-start-column="67" selection-end-line="46" selection-end-column="67" />
+        <state relative-caret-position="353">
+          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <marker date="1538575396626" expanded="true" signature="626:627" ph="..." />
-            <marker date="1538575396626" expanded="true" signature="866:1167" ph="..." />
-            <marker date="1538575396626" expanded="true" signature="1186:1191" ph="..." />
+            <marker date="1538575471893" expanded="true" signature="626:627" ph="..." />
+            <marker date="1538575471893" expanded="true" signature="887:892" ph="..." />
+            <marker date="1538575471893" expanded="true" signature="887:1209" ph="..." />
+            <marker date="1538575471893" expanded="true" signature="1228:1233" ph="..." />
           </folding>
         </state>
       </provider>
