@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc83bb51-ed15-4b2b-8889-01c218ea33a5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/artists.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/artists.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -72,13 +71,13 @@
         <counts>
           <entry key="Python Console" value="137" />
           <entry key="dummy" value="12" />
-          <entry key="py" value="2233" />
+          <entry key="py" value="2239" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="12" />
-          <entry key="Python" value="2368" />
+          <entry key="Python" value="2374" />
           <entry key="SQL" value="2" />
         </counts>
       </usages-collector>
@@ -115,13 +114,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/modules/artists.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="431">
+              <caret line="40" column="26" lean-forward="true" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
-                <marker date="1538572510890" expanded="true" signature="557:966" ph="..." />
-                <marker date="1538572510890" expanded="true" signature="1316:1321" ph="..." />
-                <marker date="1538572510890" expanded="true" signature="1346:1351" ph="..." />
+                <marker date="1538572615341" expanded="true" signature="557:966" ph="..." />
+                <marker date="1538572615341" expanded="true" signature="1316:1321" ph="..." />
+                <marker date="1538572615341" expanded="true" signature="1346:1351" ph="..." />
               </folding>
             </state>
           </provider>
@@ -283,7 +282,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32959184" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32959184" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32959184" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32959184" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -394,13 +393,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/artists.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="431">
+          <caret line="40" column="26" lean-forward="true" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
-            <marker date="1538572510890" expanded="true" signature="557:966" ph="..." />
-            <marker date="1538572510890" expanded="true" signature="1316:1321" ph="..." />
-            <marker date="1538572510890" expanded="true" signature="1346:1351" ph="..." />
+            <marker date="1538572615341" expanded="true" signature="557:966" ph="..." />
+            <marker date="1538572615341" expanded="true" signature="1316:1321" ph="..." />
+            <marker date="1538572615341" expanded="true" signature="1346:1351" ph="..." />
           </folding>
         </state>
       </provider>
