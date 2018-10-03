@@ -27,7 +27,7 @@ def check_artist(artist_id: int):
         sql = "SELECT id FROM `artists` WHERE ym_artist_id='"+artist_id+"'"
         cursor.execute(sql)
 
-        return len(cursor) == 1
+        return cursor
 
 
 def update_user(artist_id, data):
