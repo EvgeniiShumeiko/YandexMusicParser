@@ -1,0 +1,5 @@
+version = "0.1"
+parse_url = "https://music.yandex.ru/handlers/"
+parse_artists_url = "metatag.jsx"
+parse_info_url = "artist.jsx"
+parse_genre_url = "https://music.yandex.ru/genre/"
