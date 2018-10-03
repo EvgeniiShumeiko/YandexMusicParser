@@ -70,13 +70,13 @@
         <counts>
           <entry key="Python Console" value="137" />
           <entry key="dummy" value="12" />
-          <entry key="py" value="2161" />
+          <entry key="py" value="2168" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="12" />
-          <entry key="Python" value="2297" />
+          <entry key="Python" value="2304" />
           <entry key="SQL" value="1" />
         </counts>
       </usages-collector>
@@ -113,13 +113,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/modules/artists.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+            <state relative-caret-position="229">
+              <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
-                <marker date="1538571751486" expanded="true" signature="584:972" ph="..." />
-                <marker date="1538571751486" expanded="true" signature="992:997" ph="..." />
-                <marker date="1538571751486" expanded="true" signature="1022:1027" ph="..." />
+                <marker date="1538571879056" expanded="true" signature="566:916" ph="..." />
+                <marker date="1538571879056" expanded="true" signature="936:941" ph="..." />
+                <marker date="1538571879056" expanded="true" signature="966:971" ph="..." />
               </folding>
             </state>
           </provider>
@@ -366,13 +366,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/artists.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        <state relative-caret-position="229">
+          <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
-            <marker date="1538571751486" expanded="true" signature="584:972" ph="..." />
-            <marker date="1538571751486" expanded="true" signature="992:997" ph="..." />
-            <marker date="1538571751486" expanded="true" signature="1022:1027" ph="..." />
+            <marker date="1538571879056" expanded="true" signature="566:916" ph="..." />
+            <marker date="1538571879056" expanded="true" signature="936:941" ph="..." />
+            <marker date="1538571879056" expanded="true" signature="966:971" ph="..." />
           </folding>
         </state>
       </provider>
