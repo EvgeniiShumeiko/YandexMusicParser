@@ -1,5 +1,6 @@
-import mysql.connector
+import pymysql.cursors
 import json
+
 
 def save_artists_page(artist_list):
     for a in artist_list:
@@ -22,20 +23,29 @@ def save_artists_page(artist_list):
 
 
 def check_artist(id: int):
-    pass
-    cnx = mysql.connector.connect(host='localhost', database='yandex_data', user='analytic',
-                                  password='CzeY3YOW9lzk71D3')
-    cursor = cnx.cursor()
+    # Подключиться к базе данных.
+    connection = pymysql.connect(host='localhost',
+                                 user='analytic',
+                                 password='CzeY3YOW9lzk71D3',
+                                 db='yandex_data',
+                                 charset='utf8mb4',
+                                 cursorclass=pymysql.cursors.DictCursor)
 
-    query = ("SELECT id FROM artists "
-             "WHERE ym_artist_id = '%s'")
+    print("connect successful!!")
 
-    cursor.execute(query, id)
+    with connection.cursor() as cursor:
+        # SQL
+        sql = "SELECT id FROM artist WHERE ym_artist_id='%s'"
 
-    print(cursor)
+        # Выполнить команду запроса (Execute Query).
+        cursor.execute(sql, id)
 
-    cursor.close()
-    cnx.close()
+        print("cursor.description: ", cursor.description)
+
+        print()
+
+        for row in cursor:
+            print(row)
 
 
 def update_user():
